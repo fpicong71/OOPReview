@@ -39,7 +39,7 @@ console.log("\nProbar Print********************");
 let misMoviles:Mobile[] = [movil1,movil2,movil3];
 for(let mov in misMoviles)
 {
-    console.log("\n------------------------");
+    console.log("\n.------------------------");
     console.log(misMoviles[mov].print());  
 }
 
