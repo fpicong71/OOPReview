@@ -20,7 +20,7 @@ export class MobileLibrary
         this.nameL = nameL;
         this.location = location;
         this.mobiles = mobiles;
-        this.totalPrice = totalPrice;
+        this.totalPrice = this.totalPriceCalculation();
     }
 
     //GETTERS & SETTERS
@@ -69,7 +69,7 @@ export class MobileLibrary
 
     //totalPriceCalculation()-> salida un number 
     // -> Suma de todos los precios de la libreria 
-    public totalPriceCalculation():number
+    private totalPriceCalculation():number
     {
         let sumPrecios:number = 0;
 
@@ -81,6 +81,26 @@ export class MobileLibrary
                             });
 
         return sumPrecios;
+    }
+
+    //printLibrary() -> Recorre todos los objetos del array
+    //mostrando sus carracteristicas. Devuelve un string para imprimirlo
+    public printLibrary():string
+    {
+        let impresion:string = "This are all my mobiles:\n";
+
+        let movs:Mobile[] = this.getMobiles();
+
+        for(let telf in movs)
+        {
+            impresion += movs[telf].print();
+        }
+
+        impresion += "\n Library Name: " + this.getName()
+        impresion +=  "\n Library location: " + this.getLocation();
+        impresion += "\n TotalPrice: " + this.getTotalPrice();
+
+        return impresion;
     }
 }
 

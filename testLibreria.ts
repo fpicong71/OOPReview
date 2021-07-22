@@ -75,6 +75,10 @@ for(let m in miLibrery.getMobiles())
 console.log("Precio-> " + miLibrery.getTotalPrice());
 
 //Pruebo TotalPriceCalculation
-console.log("\nCompruebototalPriceCalculation***************\n");
+// console.log("\nCompruebototalPriceCalculation***************\n");
 
-console.log(miLibrery.totalPriceCalculation());
+// // console.log(miLibrery.totalPriceCalculation());
+
+//Pruebo ImprimoLibreria
+console.log("\nCompruebo Imprimir Libreria***************\n");
+console.log(miLibrery.printLibrary());
