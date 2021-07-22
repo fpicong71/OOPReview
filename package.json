@@ -1,0 +1,11 @@
+{
+  "name": "r2_repetido",
+  "version": "1.0.0",
+  "description": "Repeticion proceso git repaso2",
+  "main": "testMobile",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kika",
+  "license": "ISC"
+}
